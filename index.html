@@ -3,278 +3,433 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
+    <meta name="author" content="Sara Eilenstine" />
+    <title>Incrementu</title>
+    <link rel="icon" href="./favicon.ico" />
+    <link rel="stylesheet" href="styles.css" />
     <script
       src="https://kit.fontawesome.com/c8e4d183c2.js"
       crossorigin="anonymous"
     ></script>
-    <title>Sara's Portfolio</title>
+    <script src="index.js"></script>
+    
   </head>
   <body>
-    <section id="about-me">
+    <section id="landing">
       <nav>
-        <div class="personal__logo text--pink text--name">Sara Eilenstine</div>
-        <ul class="nav__link--list">
-          <li class="nav__link">
-            <a href="#languages" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Technology</a>
-          </li>
-          <li class="nav__link">
-            <a href="#projects" class="
-            nav__link--anchor
-            link__hover-effect
-            link__hover-effect--black
-          ">Projects</a>
-          </li>
-          <li class="nav__link">
-            <a href="mailto:sara.eilenstine@email.com" class="
-            nav__link--anchor
-            nav__link--anchor-primary
-          ">Contact</a>
-          </li>
-        </ul>
-      </nav>
+        <div class="nav__container">
+          <img class="logo" src="assets/logo.png" alt="" />
+          <ul class="nav__links">
+            <li><a href="#" class="nav__link">Home</a></li>
+            <li><a href="#" class="nav__link no-cursor">Contact</a></li>
+            <li>
+              <a href="#features" class="nav__link nav__link--primary">Books</a>
+            </li>
+          </ul>
+        
 
-      <div class="flex flex-1">
-        <div class="about-me__info row">
-          <div class="about-me__info--container">
-            <figure class="about-me__picture--mask">
-              <img src="assets/headshot.JPG" class="about-me__picture" alt="" />
-            </figure>
-            <h1 class="about-me__info--title">
-              Hello, I'm <span class="text--pink text--name">Sara!</span>
-              <span class="coffee_container"> ~ <span class="coffee">☕</span> 
-                <div class="steam" id="steam1"></div>
-                <div class="steam" id="steam2"></div>
-                <div class="steam" id="steam3"></div>
-                <div class="steam" id="steam4"></div>
-              </span>
-            </h1>
-            <p class="about-me__info--para">
-              I'm a
-              <strong class="text--pink">software developer</strong> with frontend and backend
-              experience. With my combined skills of
-              program management, automation, leadership, and stakeholder
-              communications, I bring a unique perspective and passion for
-              building clean, minimalist tools and applications that both companies and
-              customers need.
-            </p>
-            <div class="about-me__links">
-              <a
-                href="https://www.linkedin.com/in/saraeilenstine/"
-                target="_blank"
-                class="about-me__link"
-                ><i class="fab fa-linkedin-in"></i
-              ></a>
-              <a
-                href="https://www.github.com/cattelia"
-                target="_blank"
-                class="about-me__link"
-                ><i class="fab fa-github"></i
-              ></a>
-              <a href="mailto:sara.eilenstine@gmail.com" class="about-me__link"
-                ><i class="far fa-envelope"></i
-              ></a>
-              <a href="./assets/resume.png" target="_blank" class="about-me__link"
-                ><i class="fa fa-file"></i
-              ></a>
-            </div>
-          </div>
-
-          <figure class="about-me__img--container">
-            <img
-              src="./assets/undraw_programming.svg"
-              class="about-me__img"
-              alt=""
-            />
-          </figure>
-        </div>
-      </div>
-    </section>
-    <section id="languages">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            My <span class="text--pink">technology stack</span>
-          </h1>
-          <div class="language__list">
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png"
-                  class="language__img"
-                  alt=""
-                />
-              </figure>
-              <span class="language__name">HTML 5</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img src="https://cdn.iconscout.com/icon/free/png-256/css-131-722685.png" alt="CSS Logo"
-                  class="language__img" />
-              </figure>
-              <span class="language__name">CSS 3</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="https://s3.dualstack.us-east-2.amazonaws.com/pythondotorg-assets/media/files/python-logo-only.svg"
-                  class="language__img"
-                  alt=""
-                />
-              </figure>
-              <span class="language__name">Python</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="https://cdn.iconscout.com/icon/free/png-256/javascript-1-225993.png"
-                  class="language__img"
-                  alt=""
-                />
-              </figure>
-              <span class="language__name">Javascript</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="https://cdn.iconscout.com/icon/free/png-256/typescript-3521774-2945272.png"
-                  class="language__img"
-                  alt=""
-                />
-              </figure>
-              <span class="language__name">Typescript</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="https://cdn.iconscout.com/icon/free/png-256/react-3-1175109.png"
-                  class="language__img"
-                  alt=""
-                />
-              </figure>
-              <span class="language__name">React</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="https://book.git-scm.com/images/logos/downloads/Git-Icon-1788C.svg"
-                  class="language__img"
-                  alt=""
-                />
-              </figure>
-              <span class="language__name">Git</span>
-            </div>
-            <div class="language">
-              <figure class="language__img--wrapper">
-                <img
-                  src="./assets/terminal.svg"
-                  class="language__img"
-                  alt=""
-                />
-              </figure>
-              <span class="language__name">Terminal</span>
-            </div>
-          </div>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section id="projects" class="projects">
-      <div class="container">
-        <div class="row">
-          <h1 class="section__title">
-            Here are some of my <span class="text--pink">projects</span></h1>
-
-            <ul class="project__list">
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./assets/loopit.png"
-                    class="project__img"
-                    alt="Car subscription"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">Car sales project</h3>
-                    <h4 class="project__description--subtitle">Html, CSS, Javascript, Vue, Vuex</h4>
-                    <p class="project__description--para">Lorem ipsum dolor, sit ametLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet cons consectetur adipisicing elit. Et, tempora.</p>
-                    <div class="project__description--links">
-                      <a href="https://www.github.com/cattelia" target="_blank" class="project__description--link"><i class="fab fa-github"></i></a>
-                      <a href="https://www.github.com/cattelia" target="_blank" class="project__description--link"><i class="fas fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
+          <!-- Collapsed Menu Items for Responsiveness   -->
+          <button id="hamburger" class="button__menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+          </button>
+          <div id="menu" class="menu__backdrop">
+            <button class="button__menu button__menu--close" onclick="closeMenu()">
+              <i class="fas fa-times"></i>
+            </button>
+            <ul class="menu__links">
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
               </li>
-
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./assets/boot.JPG"
-                    class="project__img"
-                    alt="Boot.dev"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">Backend Programming</h3>
-                    <h4 class="project__description--subtitle">Python, Shell, Git, OOP</h4>
-                    <p class="project__description--para">Lorem ipsum dolor, sit ametLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet cons consectetur adipisicing elit. Et, tempora.</p>
-                    <div class="project__description--links">
-                      <a href="https://www.github.com/cattelia/Boot.dev" target="_blank" class="project__description--link"><i class="fab fa-github"></i></a>
-                      <a href="https://www.boot.dev/u/cattelia" target="_blank" class="project__description--link"><i class="fas fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
+              <li class="menu__list">
+                <a href="#latest" class="menu__link" onclick="closeMenu()">Books</a>
               </li>
-
-              <li class="project">
-                <div class="project__wrapper">
-                  <img
-                    src="./assets/dashboard.png"
-                    class="project__img"
-                    alt="Boot.dev"
-                  />
-                  <div class="project__description">
-                    <h3 class="project__description--title">Sales Dashboard</h3>
-                    <h4 class="project__description--subtitle">HTML, CSS, Javascript, Vue, Vuex</h4>
-                    <p class="project__description--para">Lorem ipsum dolor, sit ametLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet consLorem ipsum dolor, sit amet cons consectetur adipisicing elit. Et, tempora.</p>
-                    <div class="project__description--links">
-                      <a href="https://www.github.com/cattelia/Boot.dev" target="_blank" class="project__description--link"><i class="fab fa-github"></i></a>
-                      <a href="https://www.boot.dev/u/cattelia" target="_blank" class="project__description--link"><i class="fas fa-link"></i></a>
-                    </div>
-                  </div>
-                </div>
+              <li class="menu__list">
+                <a href="#" class="menu__link no-cursor" onclick="closeMenu()">Contact</a>
               </li>
-              
             </ul>
+          </div>
+        </div>
+      </nav>
+      <header>
+        <div class="header__container">
+          <div class="header__description">
+            <h1>
+              America's best place for post-graduates to learn about money &
+              life
+            </h1>
+            <h2>
+              Find the right book with
+              <span class="text--gold">Incrementu</span>
+            </h2>
+            <button class="button" onclick="location.href = '#features';">
+              Browse Books
+              <!-- https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page -->
+            </button>
+          </div>
+
+            <figure class="header__img--wrapper">
+              <img src="./assets/undraw_reading.svg" alt="" />
+            </figure>
+
+        </div>
+      </header>
+    </section>
+
+    <main>
+      <section id="highlights">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Why choose <span class="text--gold">Incrementu?</span>
+            </h2>
+            <h3><i>Over 10,000+ Books to Choose From</i></h3>
+            <div class="highlight__wrapper">
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="text--gold fas fa-bolt"></i>
+                </div>
+                <h3 class="highlight__subtitle">Quick and Easy</h3>
+                <p class="highlight__para">
+                  Get instant access to the books you purchase online.
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="text--gold fas fa-book-open"></i>
+                </div>
+                <h3 class="highlight__subtitle">Beginner Friendly</h3>
+                <p class="highlight__para">
+                  For post-grads just getting started in the world of money.
+                </p>
+              </div>
+              <div class="highlight">
+                <div class="highlight__img">
+                  <i class="text--gold fas fa-tags"></i>
+                </div>
+                <h3 class="highlight__subtitle">Affordable</h3>
+                <p class="highlight__para">
+                  Unlike college that costs a fortune, get cheap books for as
+                  little as $10.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- FEATURED -->
+      <section id="features">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Featured <span class="text--gold">Books</span>
+            </h2>
+            <div class="books">
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/psych-of-money.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">Psychology of Money</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$19.95</span>
+                  $14.95
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/algebra of wealth.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">The Algebra of Wealth</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$19.95</span>
+                  $14.95
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img src="./assets/budget.jpg" class="book__img" alt="" />
+                </figure>
+                <div class="book__title">How to Budget</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$15.95</span>
+                  $12.97
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/intro finance.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">
+                  Introductory to Mathematical Finance
+                </div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$49.95</span>
+                  $24.95
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- LATEST -->
+      <section id="latest">
+        <div class="container">
+          <div class="row">
+            <h2 class="section__title">
+              Latest <span class="text--gold">Books</span>
+            </h2>
+            <div class="books">
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/algebra of wealth.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">The Algebra of Wealth</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$19.95</span>
+                  $14.95
+                </div>
+              </div>
+
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/book-1.jpeg"
+                    class="book__img scale--back"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">The 10X Rule</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$19.95</span>
+                  $14.95
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/psych-of-money.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">Psychology of Money</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$19.95</span>
+                  $14.95
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/atomic habits.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">Atomic Habits</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$26.99</span>
+                  $12.95
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img src="./assets/deep work.jpeg" class="book__img" alt="" />
+                </figure>
+                <div class="book__title">Deep Work</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$9.99</span>
+                  $5.99
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/intro statistics.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">Introductory Statistics</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$59.95</span>
+                  $29.95
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/intro finance.jpg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">
+                  Introductory to Mathematical Finance
+                </div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$49.95</span>
+                  $24.95
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__img--wrapper">
+                  <img
+                    src="./assets/5 second rule.jpeg"
+                    class="book__img"
+                    alt=""
+                  />
+                </figure>
+                <div class="book__title">The 5 Second Rule</div>
+                <div class="book__rating">
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star text--bright-gold"></i>
+                  <i class="fas fa-star-half-alt text--bright-gold"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal text--grey">$15.95</span>
+                  $12.97
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- EXPLORE -->
+      <section id="explore">
+        <div class="container">
+          <div class="row">
+            <div class="explore__wrapper">
+              <h2 class="explore__title">
+                Explore more <span class="text--gold">Books</span>
+              </h2>
+              <button class="button" onclick="location.href = '#features';">
+                Browse Books
+                <!-- https://stackoverflow.com/questions/16562577/how-can-i-make-a-button-redirect-my-page-to-another-page -->
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer id="footer">
+      <div class="container">
+        <div class="row">
+          <div class="footer__wrapper">
+            <a href="#"><figure class="footer__logo">
+              <img
+                src="./assets/logo_box_icon.png"
+                class="footer__box-logo"
+                alt=""
+              />
+            </figure></a>
+            <div class="footer__links">
+              <a href="#" class="footer__link">Home</a>
+              <a href=" " class="footer__link no-cursor">About</a>
+              <a href="./cookies.html" class="footer__link">Cookies</a>
+              <a href="" class="footer__link no-cursor">Contact</a>
+            </div>
+            <p class="footer__copyright">Copyright &#169 2024 Incrementu </p>
+          </div>
         </div>
       </div>
-    </section> <!-- END PROJECTS -->
-    <footer>
-      <div class="row footer__row">
-        <a href="#" class="footer__anchor"> <!-- LOGO / Figure -->
-          <figure class="footer__logo">
-            <span class="text--pink text--name footer__logo--img">Sara ~☕</span> 
-          </figure>
-        </a>
-        <div class="footer__social--list">
-          <a href="https://www.github.com/cattelia" class="footer__social--link
-          link__hover-effect
-          link__hover-effect--white" target="_blank">Github</a>
-          <a href="https://www.linkedin.com/in/saraeilenstine/" class="footer__social--link
-          link__hover-effect
-          link__hover-effect--white" target="_blank">LinkedIn</a>
-          <a href="mailto:sara.eilenstine@gmail.com" class="footer__social--link
-          link__hover-effect
-          link__hover-effect--white" target="_blank">Email</a>
-          <a href="./assets/resume.png" class="footer__social--link
-          link__hover-effect
-          link__hover-effect--white" target="_blank">Resume</a>
-        </div>
-        <div class="footer__copyright">Copyright &#169 2024 Sara Eilenstine</div>
-      </div>
-    </footer> <!-- END FOOTER -->
-    
+    </footer>
   </body>
 </html>
